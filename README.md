@@ -1,4 +1,4 @@
-# :wave: The Basics of GitHub(modified by MHD Kamal Rushdi/150210907)
+# :wave: The Basics of GitHub(modified by MHD Kamal Rushdi/150210907 at 11:30 25/10/2021)
 
 ## 🤓 Course overview and learning outcomes 
 
