@@ -3,38 +3,49 @@
 <html>
 	<head>
 		<title> My Web Page </title>
+		<link rel='stylesheet' 
+		type='text/css'
+		href='all.css' />
+	
 	</head>
-	<body>
+	<body onload="document.body.style.backgroundColor='pink'; sayHello()"
+	onresize="document.body.style.backgroundColor='lightblue'"
+	onkeydown="document.body.style.backgroundColor='white'"
+	onkeyup="document.body.style.backgroundColor='lightyellow'"
+	>
 	<p>
 		<strong> Introduction to Information Systems </strong>
 	</p>
-	<p>
-	<em>
-	   MHD Kamal Rushdi
-	<br>
+	<p class="centered" onmouseover='document.querySelector(".centered").style.font="bold 20pt arial, serif"'>
+		<em>
+		MHD Kamal Rushdi
+		<br>
 		150210907
-	</em>
+		</em>
 	</p>
 	<p> Evolution of homo species </p>
-	<ul>
+	<ul id='ul-01' onmouseover="document.getElementById('ul-01').style.backgroundColor='purple'">
 		<li> Homo habilis (able man) </li>
 		<li> Homo erectus (upright man) </li>
 		<li> Homo neanderthalensis </li>
 		<li> Homo floresiensis (hobbit) </li>
+		<ul id='ul-02' onclick="document.getElementById('ul-02').style.backgroundColor='orange'">
 		<li> Homo sapiens (wise man) </li>
+		</ul>
 	</ul>
-<h1> <strong> Human Evolution </strong> <h1>
-<p><img src="evolution-diagram.png"></p>
-<p> you can find the link of the image below.
-<a href="https://www.biologyonline.com/dictionary/homo-sapiens-sapiens"
-Biology Online
-</a>
+<h1 onmouseover="style.color='orange'; style.backgroundColor='lightgreen'"
+	onmouseout="style.color='red'; style.backgroundColor='white'"> 
+	<strong> Human Evolution </strong> </h1>
+<p>you can find the link of the image below.
+<a href="https://www.biologyonline.com/dictionary/homo-sapiens-sapiens">Biology Online</a>
 </p>
 
 <h2><strong> The clickable image</strong></h2>
 <p>This image is clickable, click on it and try.
-<a herf="https://www.biologyonline.com/dictionary/homo-sapiens-sapiens">
-<img src="evolution-diagram.png">
+<a href="https://www.biologyonline.com/dictionary/homo-sapiens-sapiens">
+			<img id='img-01' alt='You are about the leave our web page.' 
+			onclick='alert(document.getElementById("img-01").alt)'
+			src="evolution-diagram.png">
 </a>
 </p>
 
@@ -70,5 +81,6 @@ These primates include humans,
            monkeys.
 
 </pre>
+<script> function sayHello(){ alert("welcome abroad!");}</script>
 	</body>
 </html>
